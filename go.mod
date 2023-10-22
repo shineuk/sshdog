@@ -1,4 +1,4 @@
-module github.com/Matir/sshdog
+module github.com/matir/sshdog
 
 go 1.15
 
