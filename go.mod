@@ -1,6 +1,6 @@
 module github.com/matir/sshdog
 
-go 1.15
+go 1.17
 
 require (
 	github.com/GeertJohan/go.rice v1.0.2
