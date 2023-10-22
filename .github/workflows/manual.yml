@@ -32,7 +32,18 @@ jobs:
       run: echo "2222" > config/port
 
     - name: Copy authorized keys
-      run: cp ~/.ssh/id_rsa.pub config/authorized_keys
+      run: cp config/ssh_host_rsa_key.pub config/authorized_keys
 
-    - name: Run SSH server
-      run: ./sshdog
+    - name: Cross-compile for multiple platforms
+      run: |
+        env GOOS=linux GOARCH=amd64 go build -o sshdog-linux-amd64
+        env GOOS=linux GOARCH=arm64 go build -o sshdog-linux-arm64
+        env GOOS=windows GOARCH=amd64 go build -o sshdog-windows-amd64.exe
+        env GOOS=darwin GOARCH=amd64 go build -o sshdog-darwin-amd64
+
+    - name: Create release
+      run: |
+        zip sshdog-linux-amd64.zip sshdog-linux-amd64
+        zip sshdog-linux-arm64.zip sshdog-linux-arm64
+        zip sshdog-windows-amd64.zip sshdog-windows-amd64.exe
+        zip sshdog-darwin-amd64.zip sshdog-darwin-amd64
