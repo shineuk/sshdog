@@ -27,7 +27,7 @@ import (
 	"sync"
 
 	"github.com/google/shlex"
-	"github.com/matir/sshdog/pty"
+	"github.com/shineuk/sshdog/pty"
 	"golang.org/x/crypto/ssh"
 )
 
