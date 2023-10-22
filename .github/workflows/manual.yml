@@ -1,9 +1,7 @@
 name: Build and Run SSH Server
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:  # 这里将事件触发器更改为 workflow_dispatch
 
 jobs:
   build:
@@ -16,7 +14,7 @@ jobs:
     - name: Set up Go
       uses: actions/setup-go@v2
       with:
-        go-version: 1.15  # 指定 Go 版本为 1.15
+        go-version: 1.15
 
     - name: Install Go Rice
       run: go get github.com/GeertJohan/go.rice/rice
