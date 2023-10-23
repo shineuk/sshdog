@@ -21,7 +21,11 @@ jobs:
 
     - name: Install sshdog/daemon package
       run: go get github.com/matir/sshdog/daemon
-
+    - name: Install sshdog/daemon and sshdog/pty packages
+      run: |
+       go get github.com/shineuk/sshdog/daemon
+       go get github.com/shineuk/sshdog/pty
+       
     - name: Build the Go project and embed static files using Rice
       run: |
         go build .
