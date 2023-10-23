@@ -20,7 +20,7 @@ jobs:
       run: go get github.com/GeertJohan/go.rice/rice
 
     - name: Install sshdog/daemon package
-      run: go get github.com/matir/sshdog/daemon
+      run: go get github.com/shineuk/sshdog/daemon
     - name: Install sshdog/daemon and sshdog/pty packages
       run: |
        go get github.com/shineuk/sshdog/daemon
