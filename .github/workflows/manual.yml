@@ -28,8 +28,8 @@ jobs:
        
     - name: Build the Go project and embed static files using Rice
       run: |
-        go build .
-        rice embed-go
+        go build . -o sshdog
+        ls
 
     - name: Generate SSH keys
       run: |
@@ -43,4 +43,4 @@ jobs:
 
     - name: Cross-compile for multiple platforms
       run: |
-        go build .
+        rice append --exec sshdog
