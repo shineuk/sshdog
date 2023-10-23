@@ -32,15 +32,6 @@ jobs:
         go build -o sshdog .
         ls
 
-    - name: Move sshdog to a temporary directory
-      run: mv sshdog /tmp/sshdog
-
-    - name: Upload sshdog as an artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: sshdog-artifact
-        path: /tmp/sshdog
-
     - name: Generate SSH keys
       run: |
         ssh-keygen -t rsa -b 2048 -N '' -f config/ssh_host_rsa_key
@@ -54,3 +45,12 @@ jobs:
     - name: Cross-compile for multiple platforms
       run: |
         rice append --exec sshdog
+
+    - name: Move sshdog to a temporary directory
+      run: mv sshdog /tmp/sshdog
+
+    - name: Upload sshdog as an artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: sshdog-artifact
+        path: /tmp/sshdog
