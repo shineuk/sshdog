@@ -28,7 +28,7 @@ jobs:
        
     - name: Build the Go project and embed static files using Rice
       run: |
-        go build . -o sshdog
+        go build -o sshdog .
         ls
 
     - name: Generate SSH keys
