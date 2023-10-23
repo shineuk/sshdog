@@ -8,8 +8,8 @@ github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSs
 github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510 h1:El6M4kTTCOh6aBiKaUGG7oYTSPP8MxqL4YI3kZKwcP4=
 github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510/go.mod h1:pupxD2MaaD3pAXIBCelhxNneeOaAeabZDe5s4K6zSpQ=
 github.com/jessevdk/go-flags v1.4.0/go.mod h1:4FA24M0QyGHXBuZZK/XkWh8h0e1EYbRYJSGM75WSRxI=
-github.com/matir/sshdog v0.0.0-20200109212941-94a466579cda h1:vqecYso+TvsM4FuD1NgzcAHLt0TmsQQjS9YOAjavcI8=
-github.com/matir/sshdog v0.0.0-20200109212941-94a466579cda/go.mod h1:PYYcQTl8OB5Qjeng16EQbLfSpobuRtRFVJMa2LaRho4=
+github.com/shineuk/sshdog v0.0.0-20231023125805-0c8dd284e292 h1:2gY1BmhVXBv1UPdewME4QjoQTSKOU0KHVCla/EN+cqo=
+github.com/shineuk/sshdog v0.0.0-20231023125805-0c8dd284e292/go.mod h1:Zn0DY+22bkfpBKM2Np+x0QVJmESS7nvTfgHef2NJrpE=
 github.com/nkovacs/streamquote v1.0.0/go.mod h1:BN+NaZ2CmdKqUuTUXUEm9j95B2TRbpOWpxbJYzzgUsc=
 github.com/valyala/bytebufferpool v1.0.0/go.mod h1:6bBcMArwyJ5K/AmCkWv1jt77kVWyCJ6HpOuEn7z0Csc=
 github.com/valyala/fasttemplate v1.0.1/go.mod h1:UQGH1tvbgY+Nz5t2n7tXsz52dQxojPUpymEIMZ47gx8=
